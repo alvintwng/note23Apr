@@ -193,6 +193,10 @@ RawContent        : HTTP/1.1 200
 	``` console
 	PS ...\fsjava\src> npm install -g @vue/cli
 	```
+	or
+	``` console
+	npm install
+	```
 	* [VueCli](https://cli.vuejs.org/) 
 * Create vue
 	``` console
