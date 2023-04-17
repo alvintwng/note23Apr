@@ -2,6 +2,7 @@
 
 ## `vue create vuetest`, `npm run test:unit`
 
+### To initialize 
 ``` console
 $ npm init vue@latest
 
@@ -123,3 +124,36 @@ Ran all test suites.
 
 AzureAD+AlvinNg@LAPTOP-OJGI6SOT MINGW64 ~/zero1Wk31/vuetest (master)
 ```
+
+---
+### Next day to work
+``` console
+AzureAD+AlvinNg@LAPTOP-OJGI6SOT MINGW64 ~/zero1Wk31/vuetest (master)
+$ npm run
+Scripts available in vuetest@0.0.0 via `npm run-script`:
+  serve
+    vue-cli-service serve
+  build
+    vue-cli-service build
+  test:unit
+    vue-cli-service test:unit
+  lint
+    vue-cli-service lint
+  dev
+    vite
+  preview
+    vite preview
+    
+AzureAD+AlvinNg@LAPTOP-OJGI6SOT MINGW64 ~/zero1Wk31/vuetest (master)
+$ npm run dev  
+```
+It run server for localhost:3173
+
+New terminal
+``` conole
+AzureAD+AlvinNg@LAPTOP-OJGI6SOT MINGW64 ~/zero1Wk31/vuetest (master)
+$ npm run test:unit
+```
+It shown test results
+
+---
