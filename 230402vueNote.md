@@ -3,6 +3,7 @@ Note on Vue learning
 - [Essentials](#essentials))
 - [Components In Depth](#components-in-depth)
 - [from Tutorial](#from-tutorial)
+- [mySummary](#mysummary)
 
 ---
 
@@ -1286,7 +1287,7 @@ createApp({
 </div>
 ```
 
-Tutorial 3, Attribute Bindings
+#### Tutorial 3, Attribute Bindings
 ``` vue
 <script setup>
 import { ref } from 'vue'
@@ -1304,7 +1305,7 @@ const titleClass = ref('title')
 }
 </style>
 ```
-Tutotial 4, Event Listeners
+#### Tutotial 4, Event Listeners
 ``` vue
 <script setup>
 import { ref } from 'vue'
@@ -1320,7 +1321,7 @@ function increment() {
   <button @click="increment">count is: {{ count }}</button>
 </template>
 ```
-Tutotial 5, Form Binding
+#### Tutotial 5, Form Binding
 ``` vue
 <script setup>
 import { ref } from 'vue'
@@ -1333,7 +1334,7 @@ const text = ref('')
   <p>{{ text }}</p>
 </template>
 ```
-Tutorial 6, Conditional Rendering
+#### Tutorial 6, Conditional Rendering
 ``` vue
 <script setup>
 import { ref } from 'vue'
@@ -1351,7 +1352,7 @@ function toggle() {
   <h1 v-else>Oh no 😢</h1>
 </template>
 ```
-Tutorial 7, List Rendering
+#### Tutorial 7, List Rendering
 ``` vue
 <script setup>
 import { ref } from 'vue'
@@ -1389,7 +1390,7 @@ function removeTodo(todo) {
   </ul>
 </template>
 ```
-Tutorial 8, Computed Property
+#### Tutorial 8, Computed Property
 ``` vue
 <script setup>
 import { ref, computed } from 'vue'
@@ -1443,7 +1444,7 @@ function removeTodo(todo) {
 }
 </style>
 ```
-Tutorial 9, Lifecycle and Template Refs
+#### Tutorial 9, Lifecycle and Template Refs
 ``` vue
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -1460,7 +1461,7 @@ onMounted(() => {
 </template>
 ```
 
-Tutorial 10, Watchers
+#### Tutorial 10, Watchers
 ``` js
 import { ref, watch } from 'vue'
 
@@ -1471,7 +1472,7 @@ watch(count, (newCount) => {
   console.log(`new count is: ${newCount}`)
 })
 ```
-Tutorial 11, Components
+#### Tutorial 11, Components
 ``` vue
 <script setup>
 import ChildComp from './ChildComp.vue'
@@ -1481,7 +1482,7 @@ import ChildComp from './ChildComp.vue'
   <ChildComp />
 </template>
 ```
-Tutorial 12, Props
+#### Tutorial 12, Props
 ``` vue
 <script setup>
 import { ref } from 'vue'
@@ -1506,7 +1507,7 @@ const props = defineProps({
   <h2>{{ msg || 'No props passed yet' }}</h2>
 </template>
 ```
-Tutorial 13, Emits
+#### Tutorial 13, Emits
 ``` html
 ...
 <template>
@@ -1523,7 +1524,7 @@ emit('response', 'hello from child')
 </script>
 ...
 ```
-Turorial 14, Slots
+#### Turorial 14, Slots
 ``` js
 const msg = ref('from parent')
 ...
@@ -1537,7 +1538,7 @@ ChildComp.vue
   <slot>Fallback content</slot>
 </template>
 ```
-Tutorial 15, You Did it!
+#### Tutorial 15, You Did it!
 ``` vue
 <script setup>
 import JSConfetti from 'js-confetti'
@@ -1563,7 +1564,16 @@ h1 {
 }
 </style>
 ```
-
+---
+### mySummary
+- mounted
+	- a lifecycle hook allows us to register a callback to be called at certain times of the component's lifecycle. [Tutorial 9](#tutorial-9-lifecycle-and-template-refs).
+- Props
+	- A child component can accept input from the parent via **props**. See [tutorial 12](#tutorial-12-props).
+- Emits
+	- A child component can **emit** events to the parent. See [tutotial 13](#tutorial-13-emits).
+- Slots
+	- Parent component can pass down template fragments to the child via **slots** See [tutorial 14](#turorial-14-slots).
 ---
 [:point_up: Top](#top)
 [:top: Top](#top)
